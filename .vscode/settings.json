@@ -1,0 +1,11 @@
+{
+    "files.autoSaveWhenNoErrors": true,
+    "files.autoSaveWorkspaceFilesOnly": true,
+    "files.autoSave": "afterDelay",
+    "editor.guides.highlightActiveIndentation": "always",
+    "editor.wrappingIndent": "deepIndent",
+    "workbench.tree.renderIndentGuides": "always",
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true,
+    "prettier.vueIndentScriptAndStyle": true
+}

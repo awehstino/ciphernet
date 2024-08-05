@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px ;
+    font-family: 'segoe ui';
+}
+
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #00226d;
+    position: relative;
+
+    
+}
+
+
+.title{
+    margin-left: 10px;
+    position: absolute;
+    line-height: 20px;
+    color: white;
+    
+}
+.nav>.nav-header {
+    display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav>.nav-links>a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+}
+
+.nav>.nav-links>a:hover {
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+.nav>#nav-check {
+    display: none;
+}
+.projects_header_title{
+    width: 100%;
+    height: 50;
+    text-align: center;
+}
+
+.main_container {
+width: 90%;
+height: auto;
+margin: auto;
+background-color: white;
+box-shadow: 0px 0px 4px #00226d;
+border-radius: 20px;
+margin-top: 30px;
+padding: 5px;
+
+}
+.updates{
+
+    margin: 10px;
+    height: 60px;
+    width:160px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+    color:white;
+    background: #00226d7c;
+    border-radius: 20px;
+    border:1.5px solid  #00226d;
+
+}
+
+/* .green{
+    background-color: rgba(0, 128, 0, 0.192);
+} */
+.total_project {
+width: 50%;
+height: 150px;
+border: 1.5px solid #00226d;
+border-radius: 20px;
+margin: 50px auto 20px auto;
+padding: 20px;
+
+}
+.total_project > .total{
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.flexbox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+   
+}
+.projects_container{
+    margin: 0px 10px 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    gap: 10px;
+}
+
+.projects_container > .projectbox{
+    text-align: center;
+    border: 1.5px solid #00226d;
+    border-radius: 20px;
+}
+.desc{
+    height: auto;
+    font-size: 20px;
+    margin: 10px;
+
+}
+.profile{
+    height: 60px;
+    width: 100%;
+    /* background-color: #00226d; */
+    padding: 5px ;
+    
+}
+.profile > h5 {
+   font-size: 15px;
+   margin: -6px 0px 0px 4px;
+   color: #00226d;
+}
+.profile > h3 {
+   font-size: 15px;
+   margin: 0px 0 -9px 4px;
+   color: black;
+}
+
+.flexbox>div {
+    
+    text-align: center;
+    border: 1.5px solid #00226d;
+    border-radius: 20px;
+}
+ .flexbox> div > .title_head{
+padding: 5px 20px;
+background-color: #00226d;
+text-align: center;
+margin: 0px;
+color: #fff;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+border-top: 1.5px solid #00226d;
+border-left: 1.5px solid #00226d;
+border-right: 1.5px solid #00226d;
+
+
+}
+
+@media (max-width:600px) {
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: #00226d33;
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #00226d;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+    .total_project {
+    width: 90%;
+    height: 150px;
+    }
+    .total_project > .title_project{
+            font-size: 18px;
+    }
+    .projects_container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    gap: 10px;
+    }
+    
+}
